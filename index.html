@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>Главная</title>
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/my-style.css">
+</head>
+<!-- font-family: 'Open Sans', sans-serif; -->
+<!-- font-family: 'Roboto', sans-serif; -->
+
+<body class="page">
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="header__info header__info_w">
+					<div class="header__slogan">
+						Автосервис MAZDA <nobr>и интернет-магазин</nobr> запчастей
+					</div>
+					<div class="header__city">Екатеринбург</div>
+					<div class="header__street">ул. Черепанова 23<br>ул. 8 марта 204</div>
+					<!-- <div class="header__worktime">пн-вс с 9:00 - 21:00</div> -->
+					<div class="header__worktime header__worktime_inner">
+						<p>Часы работы</p>
+						<b>пн-вс с 9:00 - 21:00</b>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="header__main-wrap">
+					<div class="header__main">
+						<div class="header__logo">
+							<a href="/">
+								<img src="images/logo-mob.png" alt="">
+							</a>
+							<a class="phone-header" href="tel:+73432478262">+7 (343) <strong>247-82-62</strong></a>
+						</div>
+						<div class="header__burger">
+							<span class="navbar-toggle">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</span>
+						</div>
+						<div class="header__menu">
+							<ul>
+								<li><a href="/about" class="active">О компании</a></li>
+								<li><a href="/response" class="">Отзывы</a></li>
+								<li><a href="/dostavka_i_oplata" class="">Доставка</a></li>
+								<li><a href="/guarantee" class="">Гарантия</a></li>
+								<li><a href="/contacts" class="">Контакты</a></li>
+								<li><a href="/autoservice" class="">Автосервис</a></li>
+								<li><a href="/vacancy" class="">Вакансии</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="header__contacts">
+					<!-- <div class="header__phone">
+						+7 (343) <strong>247-82-62</strong>
+					</div> -->
+					<div class="header__feedback">
+						<a href="#" class="btn btn-primary btn-block btn_with-icon" data-toggle="modal" data-target="#callbackModal" role="button" onclick="yaCounter48995900.reachGoal('perezvonit_mne_shapka'); return true;">
+							<span class="btn__content">
+								<span>Перезвонить мне</span>
+								<img src="images/icon-arrow-right.png" alt="">
+							</span>
+							<span class="btn__hover-effect"></span>
+						</a>
+					</div>
+				</div>
+				<div class="header__controls">
+					<a href="#" class="header__control" data-toggle="modal" data-target="#enterModal" role="button">
+						<span class="header__control-icon header__control-icon_enter"></span>Вход / Регистрация
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row header__innerpage-row">
+				<div class="header__filters">
+					<div class="row">
+						<div class="col-xs-12 col-lg-5">
+							<div class="header__dropdown-item">
+								<a href="/autoservice" class="btn btn-info btn-block bnt_autoservice" id="dropdownBtnSercives">
+									<span class="btn__content">
+										<span>Автосервис</span>
+										<img src="images/icon-arrow-right.png" alt="">
+									</span>
+									<span class="btn__hover-effect"></span>
+								</a>
+								<div class="header__dropdown-wrap">
+									<div class="header__dropdown" id="dropdownListSercives">
+										<div class="row">
+											<div class="col-xs-12 col-sm-4">
+												<ul>
+													<li> <a href="/autoservice/sxod_razval" class=""> Сход развал </a> </li>
+													<li> <a href="/autoservice/remont_vyxlopnoj_sistemy" class=""> Ремонт выхлопной системы </a> </li>
+													<li> <a href="/autoservice/remont_korobki_peredach" class=""> Ремонт коробки передач и сцепления </a> </li>
+													<li> <a href="/autoservice/remont_toplivnoy_sistemy" class=""> Ремонт топливной системы </a> </li>
+													<li> <a href="/autoservice/zapravka_i_remont_kondicionera" class=""> Заправка и ремонт кондиционера </a> </li>
+												</ul>
+											</div>
+											<div class="col-xs-12 col-sm-4">
+												<ul>
+													<li> <a href="/autoservice/remont_tormoznoj_sistemy" class=""> Ремонт тормозной системы </a> </li>
+													<li> <a href="/autoservice/remont_rulevogo_upravleniya" class=""> Ремонт рулевого управления </a> </li>
+													<li> <a href="/autoservice/remont_elektrooborudovaniya" class=""> Ремонт электрооборудования </a> </li>
+													<li> <a href="/autoservice/remont_sistemy_oxlazhdeniya" class=""> Ремонт системы охлаждения </a> </li>
+													<li> <a href="/autoservice/remont_otopitelya_avtomobilya" class=""> Ремонт отопителя автомобиля </a> </li>
+												</ul>
+											</div>
+											<div class="col-xs-12 col-sm-4">
+												<ul>
+													<li> <a href="/autoservice/zamena_opory_dvigatelya_i_opory_peredach" class=""> Замена опоры двигателя и опоры передач </a> </li>
+													<li> <a href="/autoservice/texnicheskoe_obsluzhivanie" class=""> Техническое обслуживание </a> </li>
+													<li> <a href="/autoservice/diagnostika" class=""> Диагностика </a> </li>
+													<li> <a href="/autoservice/remont_xodovoj_chasti" class=""> Ремонт ходовой части </a> </li>
+													<li> <a href="/autoservice/remont_dvigatelya" class=""> Ремонт двигателя </a> </li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-lg-7">
+							<div class="header__phone header__phone_inner">
+								+7 (343) <strong>247-82-62</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom-links">
+					<div class="row">
+						<div class="col-xs-12 col-lg-6"><a href="/offers"><span class="icon icon-offers-link"></span>Акции и спецпредложения</a></div>
+						<div class="col-xs-12 col-lg-6"><a href="/faq"><span class="icon icon-faq-link"></span>Часто задаваемые вопросы</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="page__main">
+		<div class="container">
+			<div class="breadcrumbs">
+				<a href="/">Главная</a>
+				<span>О компании</span>
+			</div>
+			<h1 class='page__title page__title_inner'>О компании</h1>
+		</div>
+
+		<div class="advantages-wrap">
+			<div class="advantages-title">
+				<h2 class='page__title'>Наши преимущества</h2>
+			</div>
+			<div class="advantages container-inner">
+				<div class="advantages-item">
+					<img src="img/adv-1.png" alt="">
+					<div class="advantages-article">
+						<p>Запчасти от <br>производителя </p>
+						<span>Без наценок и в наличии</span>
+					</div>
+				</div>
+				<div class="advantages-item">
+					<img src="img/adv-2.png" alt="">
+					<div class="advantages-article">
+						<p>Согласование <br>с клиентом </p>
+						<span>Все работы и цены <br>согласовываются с клиентом</span>
+					</div>
+				</div>
+				<div class="advantages-item">
+					<img src="img/adv-3.png" alt="">
+					<div class="advantages-article">
+						<p>Корпоративное <br>обслуживание</p>
+						<span>Спец предложение</span>
+					</div>
+				</div>
+				<div class="advantages-item">
+					<img src="img/adv-4.png" alt="">
+					<div class="advantages-article">
+						<p>Соблюдение сроков</p>
+						<span>Без наценок и в наличии</span>
+					</div>
+				</div>
+				<div class="advantages-item">
+					<img src="img/adv-5.png" alt="">
+					<div class="advantages-article">
+						<p>Гарантия качества</p>
+						<span>Все работы и цены <br>согласовываются с клиентом</span>
+					</div>
+				</div>
+				<div class="advantages-item">
+					<img src="img/adv-6.png" alt="">
+					<div class="advantages-article">
+						<p>Система скидок</p>
+						<span>Спец предложение</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="recallBox-wrap">
+			<div class="container-inner">
+				<div class="recallBox">
+					<div class="recallBox-item">
+						<p>Узнать стоимость работ <br>за <span>5 минут</span></p>
+					</div>
+					<div class="recallBox-item">
+						<div class="recallBox-btn">
+							<a href="#" class="btn btn-primary btn-block btn_with-icon" data-toggle="modal" data-target="#callbackModal" role="button" onclick="yaCounter48995900.reachGoal('perezvonit_mne_shapka'); return true;">
+								<span class="btn__content">
+									<span>Перезвонить мне</span>
+									<img src="images/icon-arrow-right.png" alt="">
+								</span>
+								<span class="btn__hover-effect"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="repairsGallery-wrap">
+			<div class="repairsGallery">
+				<h2>Галерея</h2>
+				<!-- <div class="repairsGallery-item"> -->
+				<div class="owl-carousel" id="repairsGallery">
+					<div class="item"><img src="img/sl-1.jpg" alt=""></div>
+					<div class="item"><img src="img/sl-2.jpg" alt=""></div>
+					<div class="item"><img src="img/sl-1.jpg" alt=""></div>
+					<div class="item"><img src="img/sl-2.jpg" alt=""></div>
+					<div class="item"><img src="img/sl-1.jpg" alt=""></div>
+					<div class="item"><img src="img/sl-2.jpg" alt=""></div>
+				</div>
+				<!-- </div> -->
+			</div>
+		</div>
+		<div class="our-team team">
+			<h3>Наша команда</h3>
+
+			<div class="owl-carousel owl-theme owl-carousel_team">
+				<div class="item">
+					<div class="team__item">
+						<div class="team__image">
+							<img src="dir_images/134x134/personal_file_8_l.jpg" alt="">
+						</div>
+						<div class="team__info">
+							<div class="team__name">Дмитрий Хмелев</div>
+							<div class="team__position">мастер приемщик</div>
+						</div>
+					</div>
+					<div class="team__item">
+						<div class="team__image">
+							<img src="dir_images/134x134/personal_file_9_l.jpg" alt="">
+						</div>
+						<div class="team__info">
+							<div class="team__name">Вадим Дильмиев</div>
+							<div class="team__position">Мастер-приемщик</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="team__item">
+						<div class="team__image">
+							<img src="dir_images/134x134/personal_file_5_l.jpg" alt="">
+						</div>
+						<div class="team__info">
+							<div class="team__name">Бажуков Вадим</div>
+							<div class="team__position">Мастер-приемщик</div>
+						</div>
+					</div>
+					<div class="team__item">
+						<div class="team__image">
+							<img src="dir_images/134x134/personal_file_2_l.jpg" alt="">
+						</div>
+						<div class="team__info">
+							<div class="team__name">Вячеслав Барбашин</div>
+							<div class="team__position">менеджер отдела запчастей</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="team__item">
+						<div class="team__image">
+							<img src="dir_images/134x134/personal_file_3_l.jpg" alt="">
+						</div>
+						<div class="team__info">
+							<div class="team__name">Давыдов Дмитрий</div>
+							<div class="team__position">менеджер отдела запчастей</div>
+						</div>
+					</div>
+					<div class="team__item">
+						<div class="team__image">
+							<img src="dir_images/134x134/personal_file_6_l.jpg" alt="">
+						</div>
+						<div class="team__info">
+							<div class="team__name">Пермин Антон Владимирович</div>
+							<div class="team__position">Директор автосервиса</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="team__item">
+						<div class="team__image">
+							<img src="dir_images/134x134/personal_file_1_l.jpg" alt="">
+						</div>
+						<div class="team__info">
+							<div class="team__name">Хабибулин Максим</div>
+							<div class="team__position">менеджер отдела запчастей</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contactsBox container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-7 col-lg-7">
+					<div class="contactsBox-adress">
+						<h3>Мы находимся по адресу:</h3>
+						<p class="contactsBox-adress_first">
+							г. Екатеринбург, ул. Черепанова, д. 23<br>
+							Часы работы: пн-вс с 9:00 - 21:00
+						</p>
+						<span class="contacts__phone">+7 (343) <strong>247-82-62</strong></span>
+						<p class="contactsBox-adress_second">
+							620130, г. Екатеринбург, ул. 8-марта 204/3<br>
+							Часы работы: пн-вс с 9.00 - 21.00
+						</p>
+						<div class="contacts__map">
+							<div id="map"></div>
+							<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+							<script type="text/javascript">
+								ymaps.ready(init);
+
+								function init() {
+									var myMap = new ymaps.Map("map", {
+										center: [56.858070067850974, 60.56628499999999],
+										zoom: 11,
+									});
+									var clusterer = new ymaps.Clusterer({
+										clusterDisableClickZoom: false,
+										clusterOpenBalloonOnClick: false,
+									});
+									var myGeoObjects1 = [];
+									myGeoObjects1 = new ymaps.Placemark([56.858070067850974, 60.56628499999999], {
+										balloonContentBody: 'г. Екатеринбург, ул. Черепанова 23',
+									}, {
+										iconLayout: 'default#image',
+										// Путь до нашей картинки
+										iconImageHref: 'images/map__icon.png',
+										// Размер по ширине и высоте
+										iconImageSize: [46, 71],
+										// Смещение левого верхнего угла иконки относительно
+										// её «ножки» (точки привязки).
+										iconImageOffset: [-22, -55]
+									});
+									clusterer.add(myGeoObjects1);
+									var myGeoObjects2 = [];
+									myGeoObjects2 = new ymaps.Placemark([56.796496, 60.608155], {
+										balloonContentBody: 'г. Екатеринбург, ул. 8 марта 204',
+									}, {
+										iconLayout: 'default#image',
+										// Путь до нашей картинки
+										iconImageHref: 'images/map__icon.png',
+										// Размер по ширине и высоте
+										iconImageSize: [46, 71],
+										// Смещение левого верхнего угла иконки относительно
+										// её «ножки» (точки привязки).
+										iconImageOffset: [-22, -55]
+									});
+									clusterer.add(myGeoObjects2);
+									myMap.geoObjects.add(clusterer);
+									// Отлючаем возможность изменения масштаба
+									myMap.behaviors.disable('scrollZoom');
+								}
+							</script>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-5 col-lg-5">
+					<div class="contactsBox-form">
+						<div class="contactsBox-title">
+							<h3>Оставьте заявку</h3>
+							<p>
+								Напишите нам и мы с удовольствием<br>
+								перезвоним вам
+							</p>
+						</div>
+						<form action="" class="form form_about">
+							<div class="form-group">
+								<input type="text" class="form-control" name="" placeholder="Имя">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="" placeholder="E-mail">
+							</div>
+							<div class="form-group form-group_phone">
+								<span class="phone-code">+7 </span><input type="text" class="form-control phone" name="" placeholder="(___) ___-__-__">
+							</div>
+							<div class="form-group">
+								<textarea placeholder="Сообщение" class="form-control"></textarea>
+							</div>
+							<div class="row form__row">
+								<div class="col-xs-12">
+									<p class="form__agreement">Нажав на кнопку "Отправить", Вы даете <a href="/agreement" target="_blank">согласие</a> на<br> обработку персональных данных.</p>
+								</div>
+								<div class="col-xs-12">
+									<div class="form-group">
+										<button class="btn btn-primary btn_with-icon">
+											<span class="btn__content">
+												<span>Отправить вопрос</span>
+												<img src="images/icon-arrow-right.png" alt="">
+											</span>
+											<span class="btn__hover-effect"></span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+
+	<!-- JS_BLOCK -->
+	<script src="libs/jquery/jquery-3.2.1.min.js"></script>
+	<script src="libs/formstyler/formstyler.js"></script>
+	<script src="libs/bootstrap/bootstrap.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script src="js/tiltfx.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>

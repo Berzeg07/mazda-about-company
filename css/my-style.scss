@@ -1,0 +1,327 @@
+// out: ../css/my-style.css, outputStyle: expanded
+
+.advantages-wrap {
+    background: white;
+    border-bottom: 1px solid #F5F3F0;
+    padding-bottom: 25px;
+}
+
+.container-inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.advantages {
+    padding: 0 10px;
+    @media(min-width:1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &-item {
+        text-align: center;
+        margin-bottom: 20px;
+        @media(min-width:1200px) {
+            &:nth-child(1),
+            &:nth-child(3) {
+                padding-top: 56px;
+            }
+        }
+    }
+
+    &-article {
+        p {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 12px 0 13px;
+            line-height: 32px;
+        }
+
+        span {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &-title {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+
+        h2 {
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            font-size: 23px;
+            @media(min-width:768px) {
+                margin-top: 40px;
+                margin-bottom: 25px;
+                padding-right: 80px;
+                font-size: 40px;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 52px;
+                    height: 53px;
+                    background: url("../img/adv-icon.png") no-repeat center;
+                }
+            }
+        }
+    }
+}
+
+.recallBox-wrap {
+    background: white;
+    padding: 25px 0;
+    position: relative;
+    @media(min-width:992px) {
+        padding: 85px 0 40px;
+    }
+    @media(min-width:1850px) {
+        &:after {
+            content: "";
+            position: absolute;
+            left: -8px;
+            top: -250px;
+            width: 392px;
+            height: 489px;
+            background: url("../img/faq_before.png") no-repeat center;
+        }
+    }
+}
+
+.recallBox {
+    padding: 0 10px;
+    @media(min-width:992px) {
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @media(min-width:1366px) {
+        padding: 0 10px;
+    }
+
+    &-btn {
+        position: relative;
+        padding: 50px 0 90px;
+        z-index: 20;
+        display: inline-block;
+        max-width: 345px;
+        width: 100%;
+        margin: 0 auto;
+        @media(min-width:992px) {
+            margin: unset;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            z-index: -1;
+            width: 321px;
+            height: 202px;
+            background: url("../img/spark-plugs.png") no-repeat center;
+            @media(min-width:1200px) {
+                left: 81%;
+            }
+        }
+
+        a {
+            width: 100%;
+        }
+    }
+
+    &-item {
+        &:first-child {
+            text-align: center;
+            @media(min-width:992px) {
+                text-align: left;
+            }
+
+            p {
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 30px;
+                @media(min-width:768px) {
+                    font-size: 36px;
+                    line-height: 48px;
+                }
+            }
+
+            span {
+                color: #ba0708;
+            }
+        }
+
+        &:last-child {
+            text-align: center;
+            @media(min-width:992px) {
+                max-width: 345px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.repairsGallery-wrap {
+    padding: 45px 0 80px;
+    background: url("../img/sl-repBg.jpg") no-repeat top center;
+    background-size: cover;
+
+    h2 {
+        color: white;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 50px;
+        text-align: center;
+        @media(min-width:992px) {
+            text-align: left;
+        }
+    }
+}
+
+.repairsGallery {
+    max-width: 1250px;
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#repairsGallery {
+    .item {
+        width: 217px;
+        margin: 0 auto;
+    }
+
+    .owl-dots {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -33px;
+
+        .owl-dot {
+            display: inline-block;
+            margin-right: 10px;
+
+            span {
+                float: left;
+                display: inline-block;
+                border-radius: 10em;
+                background: rgba(255,255,255,0.3);
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        .active {
+            span {
+                background: rgba(255,255,255,1);
+            }
+        }
+    }
+}
+
+.our-team {
+    max-width: 1490px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 10px 20px;
+    border-bottom: 1px solid #E7E3DE;
+    margin-bottom: 17px;
+    @media(min-width:992px) {
+        margin-bottom: 100px;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+    }
+}
+
+.contactsBox {
+    margin-bottom: 50px;
+
+    &-form {
+        background: #E1DAD0;
+        border-radius: 10px;
+        padding: 20px 15px;
+        @media(min-width:992px) {
+            padding: 50px 45px;
+        }
+    }
+
+    &-title {
+        text-align: center;
+
+        h3 {
+            font-size: 27px;
+            @media(min-width:992px) {
+                font-size: 36px;
+            }
+        }
+
+        p {
+            font-size: 12px;
+            margin-bottom: 30px;
+            @media(min-width:768px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &-adress {
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 0;
+            @media(min-width:768px) {
+                font-size: 36px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+.contactsBox-adress_second {
+    color: #908B84;
+    margin-bottom: 64px;
+}
+
+.header__info_w {
+    width: 77.667%;
+}
+
+.header__worktime_inner {
+    color: black;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.header__phone_inner {
+    text-align: center;
+    @media(min-width:1200px) {
+        padding-top: 20px;
+    }
+
+    strong {
+        font-size: 37px;
+    }
+}
+
+.page__title_inner {
+    margin-bottom: 20px;
+}
